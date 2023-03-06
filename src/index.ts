@@ -2,10 +2,10 @@ import { defineInterface } from '@directus/extensions-sdk';
 import InterfaceComponent from './interface.vue';
 
 export default defineInterface({
-	id: 'directus-extension-1to1-inline',
-	name: 'Inline 1:1 relation',
-	icon: 'box',
-	description: 'Displays a 1 to 1 relation inline in the form.',
+	id: 'directus-extension-1to1-interface',
+	name: 'One to One Inline',
+	icon: 'list_alt',
+	description: 'Displays a one to one relationship inline as a subform.',
 	component: InterfaceComponent,
 	options: null,
 	group: 'relational',

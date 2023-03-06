@@ -39,14 +39,12 @@ const initialValue = isCollectionSingleton ? 1 : props.value;
 
 const entry = isId(initialValue) ? getSingleEntry(relatedCollection.collection, Number(initialValue)) : null;
 const initialFieldValues = entry
-	? computed(() => isCollectionSingleton ? entry.items.value : entry.items.value[0])
+	? computed(() => (isCollectionSingleton ? entry.items.value : entry.items.value[0]))
 	: computed(() => ({}));
 const loading = entry ? entry.loading : computed(() => false);
 
 const value = computed({
-	get: () => (isId(props.value) || (isCollectionSingleton && !props.value))
-		? { id: initialValue }
-		: props.value,
+	get: () => (isId(props.value) || (isCollectionSingleton && !props.value) ? { id: initialValue } : props.value),
 	set: (value) => {
 		const changedKeys = Object.keys(value as object).filter((key) => key !== 'id');
 

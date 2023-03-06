@@ -1,13 +1,14 @@
 {
-	"name": "directus-extension-1to1-inline",
-	"description": "Please enter a description for your extension",
+	"name": "directus-extension-1to1-interface",
+	"description": "Displays a one to one relationship inline as a subform.",
 	"icon": "extension",
 	"version": "1.0.0",
-  "main": "dist/index.js",
 	"keywords": [
 		"directus",
 		"directus-extension",
-		"directus-custom-interface"
+		"directus-custom-interface",
+    "1to1",
+    "inline"
 	],
 	"directus:extension": {
 		"type": "interface",
