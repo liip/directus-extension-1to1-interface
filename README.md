@@ -9,4 +9,4 @@ This interface also works with singletons on either end (or both ends) of the 1:
 ## Installation
 
 You can install it directly from github using
-`npm i eifachnurtobi/directus-extension-1to1-interface`
+`npm i liip/directus-extension-1to1-interface`
