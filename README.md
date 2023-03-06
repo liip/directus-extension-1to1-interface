@@ -1,0 +1,1 @@
+# directus-extension-1to1-interface
